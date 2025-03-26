@@ -43,11 +43,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE      &kp N1     &kp N2        &kp N3            &kp N4     &kp N5    &kp UP_ARROW     &kp N6  &kp N7         &kp N8           &kp N9             &kp N0     &kp BACKSPACE
-&kp TAB        &kp Q      &kp W         &kp E             &kp R      &kp T     &kp DOWN_ARROW   &kp Y   &kp U          &kp I            &kp O              &kp P      &kp BSLH
-&kp BACKSPACE  &kp A      &kp S         &kp D             &kp F      &kp G     &kp LEFT_ARROW   &kp H   &kp J          &kp K            &kp L              &kp SEMI   &kp APOS
-&kp LSHFT      &kp Z      &kp X         &kp C             &kp V      &kp B     &kp RIGHT_ARROW  &kp N   &kp M          &kp COMMA        &kp DOT            &kp FSLH   &kp ENTER
-&kp C_MUTE     &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE  &mo 1     &kp ENTER        &mo 2   &kp BACKSPACE  &kp RIGHT_SHIFT  &kp RIGHT_COMMAND  &kp SPACE
+&kp GRAVE      &kp N1     &kp N2        &kp N3            &kp N4     &kp N5    &kp UP_ARROW     &kp N6         &kp N7     &kp N8           &kp N9             &kp N0     &tog 2
+&kp TAB        &kp Q      &kp W         &kp E             &kp R      &kp T     &kp DOWN_ARROW   &kp Y          &kp U      &kp I            &kp O              &kp P      &kp BSLH
+&kp BACKSPACE  &kp A      &kp S         &kp D             &kp F      &kp G     &kp LEFT_ARROW   &kp H          &kp J      &kp K            &kp L              &kp SEMI   &kp APOS
+&kp LSHFT      &kp Z      &kp X         &kp C             &kp V      &kp B     &kp RIGHT_ARROW  &kp N          &kp M      &kp COMMA        &kp DOT            &kp FSLH   &kp ENTER
+&kp C_MUTE     &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE  &mo 1     &kp ENTER        &kp BACKSPACE  &kp ENTER  &kp RIGHT_SHIFT  &kp RIGHT_COMMAND  &kp SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -56,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&kp ESC        &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10            &kp BACKSPACE
-&kp BACKSPACE  &kp HOME         &kp UP_ARROW     &kp END          &kp F10          &kp F11            &mmv MOVE_DOWN   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS         &kp EQUAL          &kp EQUAL
-&kp CAPS       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp F9           &kp F12            &mmv MOVE_LEFT   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
-&trans         &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans            &trans             &kp ENTER
-&kp C_MUTE     &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &kp KP_NUMBER_0  &kp DOT           &trans
+&kp ESC        &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6        &kp F7     &kp F8                &kp F9                 &kp F10  &trans
+&kp BACKSPACE  &kp HOME         &kp UP_ARROW     &kp END          &kp F10          &kp F11            &mmv MOVE_DOWN   &kp UNDER     &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans   &trans
+&kp CAPS       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp ENTER        &kp F12            &mmv MOVE_LEFT   &kp MINUS     &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans   &trans
+&trans         &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp ASTERISK  &kp SLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans   &kp ENTER
+&kp C_MUTE     &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans           &trans           &trans             &mkp LCLK        &trans        &trans     &trans                &trans                 &trans
             >;
 
             display-name = "layer1";
@@ -69,11 +69,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10            &kp BACKSPACE
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS         &kp EQUAL          &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &soft_off         &bootloader        &kp ENTER
-&trans     &sys_reset    &soft_off       &trans        &trans        &trans          &mkp LCLK        &trans           &trans           &kp KP_NUMBER_0  &kp DOT           &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6        &kp F7           &kp F8           &kp F9           &kp F10  &kp BACKSPACE
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none    &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &kp MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none    &kp RIGHT_SHIFT
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none    &kp ENTER
+&trans     &sys_reset    &soft_off       &trans        &trans        &trans          &mkp LCLK        &trans        &kp SLASH        &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
